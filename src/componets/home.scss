@@ -1,0 +1,22 @@
+@import '../App.scss';
+
+.hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('../img/pexels-andrew-neel-2312369\ \(1\).jpg');
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 80vh;
+}
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	h1 {
+		font-size: 4rem;
+	}
+}
