@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9595d6a2.chunk.css",
+    "main.js": "/static/js/main.d2e68a9f.chunk.js",
+    "main.js.map": "/static/js/main.d2e68a9f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.24186bf3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.24186bf3.js.map",
+    "static/js/2.5635efc6.chunk.js": "/static/js/2.5635efc6.chunk.js",
+    "static/js/2.5635efc6.chunk.js.map": "/static/js/2.5635efc6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c37fe4a326d56a6b911438b10fcdfbeb.js": "/precache-manifest.c37fe4a326d56a6b911438b10fcdfbeb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9595d6a2.chunk.css.map": "/static/css/main.9595d6a2.chunk.css.map",
+    "static/js/2.5635efc6.chunk.js.LICENSE.txt": "/static/js/2.5635efc6.chunk.js.LICENSE.txt",
+    "static/media/DGOLD_BLACK_720x.png": "/static/media/DGOLD_BLACK_720x.fa63562d.png",
+    "static/media/gih.jpg": "/static/media/gih.e3b3f51b.jpg",
+    "static/media/lg.jpg": "/static/media/lg.16cd2323.jpg",
+    "static/media/home.scss": "/static/media/pexels-andrew-neel-2312369 (1).4b24be18.jpg",
+    "static/media/pexels-ivan-bertolazzi-2681319.jpg": "/static/media/pexels-ivan-bertolazzi-2681319.000a41da.jpg",
+    "static/media/tw.jpg": "/static/media/tw.964bec6f.jpg",
+    "static/media/wf.jpg": "/static/media/wf.34c5765e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24186bf3.js",
+    "static/js/2.5635efc6.chunk.js",
+    "static/css/main.9595d6a2.chunk.css",
+    "static/js/main.d2e68a9f.chunk.js"
+  ]
+}
