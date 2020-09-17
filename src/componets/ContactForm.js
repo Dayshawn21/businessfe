@@ -14,6 +14,7 @@ const ContactForm = () => {
 						{success && <div>Thank you for contacting us!</div>}
 						{!loading &&
 						!success && (
+							
 			<Form>
 				<Form.Group controlId="name">
 					<Form.Label> Name</Form.Label>
