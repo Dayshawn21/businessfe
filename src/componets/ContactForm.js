@@ -16,6 +16,7 @@ const ContactForm = () => {
 						!success && (
 							
 			<Form>
+					<input type="hidden" name="contact" value="contact" />
 				<Form.Group controlId="name">
 					<Form.Label> Name</Form.Label>
 					<Form.Control type="text" placeholder="Enter Name" name='name' />
