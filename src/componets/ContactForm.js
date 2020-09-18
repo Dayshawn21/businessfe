@@ -14,26 +14,25 @@ const ContactForm = () => {
 						{success && <div>Thank you for contacting us!</div>}
 						{!loading &&
 						!success && (
-							
-			<Form>
-					<input type="hidden" name="contact" value="contact" />
-				<Form.Group controlId="name">
-					<Form.Label> Name</Form.Label>
-					<Form.Control type="text" placeholder="Enter Name" name='name' />
-				</Form.Group>
-				<Form.Group controlId="email">
-					<Form.Label>Email address</Form.Label>
-					<Form.Control type="email" placeholder="Enter email"  name='email' />
-				</Form.Group>
-				<Form.Group controlId="help">
-					<Form.Label> How Can I Help You</Form.Label>
-					<Form.Control as="textarea" rows="3"  name='message' />
-				</Form.Group>
+							<div>
+							<input type="hidden" name="contact" value="contact" />
+							<input type="text" name="name" placeholder="Name" required />
+							<input type="email" name="email" placeholder="Email" required />
+							<textarea
+								type="textarea"
+								name="message"
+								cols="30"
+								rows="10"
+								placeholder="How can I help you"
+								required
+							/>
+							<br />
+							<Button variant="primary" size="lg" active>
+									Submit
+				</Button>{' '}
+						</div>
 
-				<Button variant="primary" type="submit">
-					Submit
-				</Button>
-			</Form>
+
 						)}
 						</div>
 				)}

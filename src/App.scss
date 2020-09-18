@@ -193,7 +193,40 @@ ul {
 
 .contact {
 	background-color: $lightColor;
+
+Button {
+	font: inherit;
+	width: 100%;
 }
+}
+/* Forms */
+input {
+	margin: 1.2rem 0;
+}
+
+.form-text {
+	display: block;
+	margin-top: 0.3rem;
+	color: #888;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='date'],
+input[type='hidden'],
+select,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	border: 1px solid #ccc;
+}
+
+
+
+
 
 @media (max-width: 700px) {
 	.hide-sm {
