@@ -27,7 +27,7 @@ const ContactForm = () => {
 								required
 							/>
 							<br />
-							<Button variant="primary" size="lg" active>
+							<Button variant="primary"  type="submit" size="lg" active>
 									Submit
 				</Button>{' '}
 						</div>
