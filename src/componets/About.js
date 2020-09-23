@@ -13,7 +13,7 @@ const About = () => {
 				</div>
 				<div>
 					<p className="lead">
-						Entrepreneur Page is a business directory aimed at listing quality entrepreneur businesses.
+						Entrepreneur Pages is a business directory aimed at listing quality entrepreneur businesses.
 						We're your one stop shop for all your needs!
 					</p>
 				</div>

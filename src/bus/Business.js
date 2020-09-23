@@ -34,7 +34,7 @@ const Business = () => {
 			</div>
 			<div className="text-center py-4">
 				<Button variant="primary" size="lg" active>
-					<Link to="/catergory">More Entrepreneur</Link>
+					<Link to="/catergory">More Entrepreneurs</Link>
 				</Button>{' '}
 			</div>
 		</section>

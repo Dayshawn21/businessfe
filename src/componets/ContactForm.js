@@ -5,7 +5,7 @@ import NetlifyForm from 'react-netlify-form';
 const ContactForm = () => {
 	return (
 		<div>
-			<div className="text-center large">How Can I Help You</div>
+			<div className="text-center large">Contact Us</div>
 			<NetlifyForm name="contact" canSubmit="true">
 				{({ loading, error, success }) => (
 					<div>
