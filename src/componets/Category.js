@@ -1,43 +1,31 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
 
+import axios from 'axios';
 import CategoryCard from './CatergoryCard';
 
 const Category = () => {
-	const [
-		categories,
-		setCategory
-	] = useState([]);
+	const [categories, setCategory] = useState([]);
+
 	useEffect(() => {
-		fetch('https://entrepreneurpages.herokuapp.com/categories?_limit=6')
-			.then((res) => res.json())
-			.then((data) => {
-				setCategory(data);
-			})
-			.catch((err) => console.log(err));
-	});
+		const fetchCategory = async () => {
+			const { data } = await axios.get(
+				`https://entrepreneurpages.herokuapp.com/categories`,
+			);
+			setCategory(data);
+		};
+
+		fetchCategory();
+	}, []);
 	return (
-		<section className="category">
-			<h1 className="text-center large"> Categories</h1>
-			<div className="grid-4 container">
+		<section className='category'>
+			<h1 className='text-center large'> Categories</h1>
+			<div className='grid-4 container'>
 				{' '}
-				{categories.map((category) => (
-					<CategoryCard
-						key={category.id}
-						category={category}
-						name={category.name}
-						description={category.description}
-						image={category.images}
-					/>
+				{categories.map((category, key) => (
+					<CategoryCard key={category._id} category={category} />
 				))}
 			</div>
-			<div className="text-center card-button">
-				{' '}
-				<Button variant="primary" size="lg" active>
-					<Link to="/catergory"> More Categories</Link>
-				</Button>{' '}
-			</div>
+			<div className='text-center card-button'> </div>
 		</section>
 	);
 };

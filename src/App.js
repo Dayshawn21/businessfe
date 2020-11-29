@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Navbar from './componets/Navbar';
 import Footer from './componets/Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { MemoryRouter as Router, Route, Switch } from 'react-router-dom';
 import BusinessState from './context/businessState';
 import Business from './bus/Business';
 import Home from './pages/Home';
@@ -18,9 +18,9 @@ function App() {
 					<Navbar />
 
 					<Switch>
-						<Route exact path="/" component={Home} />
-						<Route exact path="/catergory" component={Category} />
-						<Route exact path="/contact" component={Contact} />
+						<Route exact path='/' component={Home} exact />
+						<Route exact path='/categories/:id' component={Category} />
+						<Route exact path='/contact' component={Contact} />
 					</Switch>
 					<Footer />
 				</Fragment>

@@ -1,12 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, Button } from 'react-bootstrap';
+import { ListGroup, Col, Row } from 'react-bootstrap';
 
-const CatergoryCard = ({ image, category, name, description }) => {
+const CatergoryCard = ({ category }) => {
 	return (
-		<div className="text-center">
-			<i className={description} />
-			<h2>{name}</h2>
+		<div className='text-center'>
+			<Row>
+				<Col>
+					<Link to={`/categories/${category._id}`}>
+						<ListGroup variant='flush'>
+							<ListGroup.Item>
+								<i className={category.description} />
+							</ListGroup.Item>
+							<ListGroup.Item>
+								<h2>{category.name}</h2>
+							</ListGroup.Item>
+						</ListGroup>
+					</Link>
+				</Col>
+			</Row>
 		</div>
 	);
 };

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
 /* Global Styles */
 $primaryColor: #3772ff;
@@ -12,7 +12,6 @@ $successColor: #28a745;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-
 }
 
 body {
@@ -147,6 +146,11 @@ ul {
 }
 .grid-4 {
 	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+}
+.grid-3 {
+	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1rem;
 }
@@ -159,7 +163,7 @@ ul {
 /* Navbar */
 .navabar {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	padding: 0.7rem 2rem;
 	z-index: 1;
@@ -174,6 +178,7 @@ ul {
 	a {
 		padding: 0.45rem;
 		margin: 0 0.25rem;
+		font-size: 1.3rem;
 	}
 	a:hover {
 		color: $lightColor;
@@ -194,10 +199,10 @@ ul {
 .contact {
 	background-color: $lightColor;
 
-Button {
-	font: inherit;
-	width: 100%;
-}
+	Button {
+		font: inherit;
+		width: 100%;
+	}
 }
 /* Forms */
 input {
@@ -223,10 +228,6 @@ textarea {
 	font-size: 1.2rem;
 	border: 1px solid #ccc;
 }
-
-
-
-
 
 @media (max-width: 700px) {
 	.hide-sm {
